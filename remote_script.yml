@@ -9,4 +9,4 @@
   tasks:
     - name: Execute the script
       shell:
-        "/home/adrian/{ cent_hosts }_script.sh"
+        /home/adrian/{{ cent_hosts }}_script.sh

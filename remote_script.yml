@@ -7,3 +7,9 @@
     - name: Execute the script
       shell:
         "/home/adrian/{{ ansible_hostname }}_script.sh"
+        
+        expect "Enter a password"
+        send {{ sample_passw0rd }}
+
+      args:
+        sample_pass: "somepassw0rd"    

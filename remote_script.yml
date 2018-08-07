@@ -13,4 +13,5 @@
 
       args:
         executable: /usr/bin/expect
+      extra-vars:
         sample_pass: "somepassw0rd"    

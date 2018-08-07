@@ -3,10 +3,7 @@
   name: Run a script on remote hosts
   gather_facts: no
 
-  vars: 
-    cent_hosts: [ '1cent', '2cent' ]
-
   tasks:
     - name: Execute the script
       shell:
-        /home/adrian/{{ cent_hosts }}_script.sh
+        /home/adrian/test_script.sh

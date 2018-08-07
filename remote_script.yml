@@ -6,7 +6,7 @@
   tasks:
     - name: Execute the script
       shell: |
-        /home/{{ ansible_user }}/{{ ansible_hostname }}_script.sh
+        /home/{{ ansible_user_id }}/{{ ansible_hostname }}_script.sh
         
         expect "Enter a password"
         send "{{ sample_pass }}\n"

@@ -9,7 +9,7 @@
         "/home/adrian/{{ ansible_hostname }}_script.sh"
         
         expect "Enter a password"
-        send "{{ sample_passw0rd }}\n"
+        send "{{ sample_pass }}\n"
 
       args:
         executable: /usr/bin/expect

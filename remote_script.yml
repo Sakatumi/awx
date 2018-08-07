@@ -1,0 +1,11 @@
+---
+- hosts: all
+  name: Run a script on remote hosts
+
+  vars: 
+    cent_hosts: [ '1cent', '2cent' ]
+
+  tasks:
+    - name: Execute the script
+      shell:
+        "/home/adrian/{{ cent_hosts|quote }}_script.sh"

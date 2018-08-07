@@ -6,11 +6,12 @@
   tasks:
     - name: Execute the script
       shell: |
-        "/home/adrian/{{ ansible_hostname }}_script.sh"
+        /home/adrian/{{ ansible_hostname }}_script.sh
         
         expect "Enter a password"
         send "{{ sample_pass }}\n"
 
+        exit 0
       args:
         executable: /usr/bin/expect
       vars:

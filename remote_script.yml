@@ -6,4 +6,4 @@
   tasks:
     - name: Execute the script
       shell:
-        /home/adrian/test_script.sh
+        "/home/adrian/{{ ansible_hostname }}_script.sh"

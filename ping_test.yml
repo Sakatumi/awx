@@ -1,0 +1,4 @@
+- hosts: rhel
+  tasks:
+    - name: test connection
+      ping:

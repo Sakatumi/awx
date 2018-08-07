@@ -1,5 +1,5 @@
 ---
-- hosts: rhel`
+- hosts: rhel
   name: Run a script on remote hosts
   gather_facts: no
 
